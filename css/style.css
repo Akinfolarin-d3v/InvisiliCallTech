@@ -35,6 +35,7 @@ article, aside, address, section {
   outline: 0;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
+  background-color: #2091ee;
 }
 
 applet, object, iframe, video, audio,
