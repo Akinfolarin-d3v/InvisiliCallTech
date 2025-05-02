@@ -26,7 +26,7 @@ small, strike, strong, sub, sup, tt, var,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend, input, textarea, button,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, address, section {
+article, aside, address {
   font-family: inherit;
   font-size: 100%;
   line-height: inherit;
@@ -35,8 +35,12 @@ article, aside, address, section {
   outline: 0;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
+}
+section {
   background-color: #2091ee;
 }
+
+
 
 applet, object, iframe, video, audio,
 fieldset, form, label, legend, input, textarea, button,

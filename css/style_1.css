@@ -149,12 +149,12 @@ body {
 body,
 body[class*="scheme_"],
 .body_style_boxed .page_wrap {
-  background-color: var(--theme-color-bg_color);
+  background-color: #2091ee;
 }
 
 [class*="scheme_"],
 body[class*="scheme_"] {
-  color: var(--theme-color-text);
+  color: #2091ee;
 }
 
 /* // old way
