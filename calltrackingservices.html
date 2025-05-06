@@ -519,6 +519,31 @@ padding: 0 !important;
       <button type="submit">Send Message</button>
     </form>
   </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const tabButtons = document.querySelectorAll(".tab-btn");
+      const tabPanels = document.querySelectorAll(".tab-panel");
+  
+      tabButtons.forEach(button => {
+        button.addEventListener("click", () => {
+          // Remove 'active' class from all buttons
+          tabButtons.forEach(btn => btn.classList.remove("active"));
+          // Add 'active' class to the clicked button
+          button.classList.add("active");
+  
+          // Hide all tab panels
+          tabPanels.forEach(panel => panel.classList.remove("active"));
+          // Show the target panel
+          const targetId = button.getAttribute("data-target");
+          const targetPanel = document.getElementById(targetId);
+          if (targetPanel) {
+            targetPanel.classList.add("active");
+          }
+        });
+      });
+    });
+  </script>
+  
 
   <footer class="footer_wrap footer_custom footer_custom_20044 footer_custom_footer-double-menu						 scheme_dark						">
     <div data-elementor-type="cpt_layouts" data-elementor-id="20044" class="elementor elementor-20044">
