@@ -449,6 +449,33 @@ padding: 0 !important;
       .hero { height:40vh; }
     }
   </style>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tabButtons = document.querySelectorAll('.tab-btn');
+      const tabPanels = document.querySelectorAll('.tab-panel');
+  
+      tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+          // Remove 'active' class from all buttons
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+  
+          // Add 'active' class to the clicked button
+          button.classList.add('active');
+  
+          // Hide all tab panels
+          tabPanels.forEach(panel => panel.classList.remove('active'));
+  
+          // Show the corresponding tab panel
+          const targetId = button.getAttribute('data-target');
+          const targetPanel = document.getElementById(targetId);
+          if (targetPanel) {
+            targetPanel.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
+  
 
 
   <!-- HERO -->
